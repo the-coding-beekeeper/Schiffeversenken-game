@@ -1,0 +1,150 @@
+body {
+margin: 0;
+padding: 0;
+background-color: black;
+}
+#navbar {
+  width: 100rem;
+  height: 10rem;
+  border: 1px solid white;
+  margin: 10px 10px 10px 10px;
+  position: relative;
+  text-align: center;
+}
+#buttonBar {
+  width: min-content;
+  height: min-content;
+  display: flex;
+  justify-content: space-between;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+.button {
+  border-radius: 8px;
+  font-size:x-large;
+  font-weight: 800;
+  width:150px;
+  height: 40px;
+  margin: 1rem;
+  animation-name: shake;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translateY(0px);
+  }
+  1% {
+    transform: translateY(-5px);
+  }
+  2% {
+    transform: translateY(0px);
+  }
+  3%{
+    transform: translateY(5px);
+  }
+  4% {
+    transform: translateY(0px);
+  }
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+#rahmen {
+  width: 100rem;
+  height: 50rem;
+  border: 1px solid white;
+  margin: 10px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+.spielfeld {
+  width: 49%;
+  height: 98%;
+  border: 1px solid white;
+}
+#linkes-spielfeld, #rechtes-spielfeld {
+  margin-right: 5px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  text-align: center;
+}
+
+#koordinatensystem, #koordinatensystemGegner {
+  border: 1px solid white;
+  width: min-content;
+  height: min-content;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr) ;
+  grid-template-rows:  repeat(7, 1fr);
+  grid-gap: 2px;
+  background-color:  blueviolet;
+  align-items: center;
+  justify-content: center;
+}
+.planquadrat {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(59, 24, 93);
+  margin: 0px;
+  padding: 0px;
+}
+p {
+  margin-left: 10px;
+  color: blueviolet;
+  font-size: 2rem;
+}
+#mitteilung {
+  color: white;
+  position: absolute;
+  top: 50;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  }
+#positionieren {
+  color:blueviolet;
+}
+
+#SchiffeAuswahl, #SchiffeAusrichtung {
+  border: 1px solid white;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: min-content;
+  height: min-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) ;
+  grid-template-rows:  repeat(4, 1fr);
+  grid-gap: 1px;
+  background-color: blueviolet;
+  position: relative;
+}
+.image {
+  width: 95%;
+  height: 95%;
+}
+.imageTreffer {
+  width: 95%;
+  height: 95%;
+  background-color: rgb(226, 43, 61);
+}
+
+#abdeckung {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 2;
+  position: absolute;
+}
